@@ -42,14 +42,17 @@ public class Journal
     {
         if (File.Exists(filename))
         {
-            entries = new List<string>(File.ReadAllLines(filename));
+            entries.Clear(); // Clear existing entries before loading new ones
+            entries.AddRange(File.ReadAllLines(filename)); // Read all lines and store them
+
             Console.WriteLine($"Journal loaded from {filename}.\n");
+
             // Automatically display the loaded entries
             DisplayJournal();
         }
         else
         {
-            Console.WriteLine("File not found.");
+            Console.WriteLine("File not found. Please check the filename and try again.");
         }
     }
 }

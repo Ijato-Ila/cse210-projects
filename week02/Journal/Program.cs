@@ -5,7 +5,7 @@ class Program
 {
     static void Main()
     {
-        Console.WriteLine("Hello World! This is Ijato's Journal Project.\n");
+        Console.WriteLine("Hello! Welcome to the Journal Program.\n");
 
         Journal myJournal = new Journal();
         Random random = new Random();
