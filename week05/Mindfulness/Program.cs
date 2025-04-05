@@ -31,7 +31,7 @@ class Program
                 BreathingActivity breathing = new BreathingActivity(); // Create an instance of BreathingActivity.
                 breathing.Run(); // Call the Run method to start the activity.
                 DateTime endTime = DateTime.Now; // Record the end time for the activity.
-                int duration = (int)(endTime - startTime).TotalSeconds; // Calculate the duration in seconds.
+                int duration = (int)(endTime - startTime).TotalSeconds; // Calculate the duration.
                 ActivityLog.LogActivity("Breathing Activity", duration); // Log the activity with its duration.
             }
             // Start Reflecting Activity when user selects option 2.
